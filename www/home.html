@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CarClicker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/index.css" />  
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+    <body onLoad="loadStorage();">
+        <header>
+            <p align="center">Home</p>
+        </header>
+        
+        <section> 
+            <img style="opacity:0.7" src="images/auto.png" alt=""
+                 onClick="clickFunction();"/>
+            <br />
+            
+            <article>
+            Speed: <div id="puntenPerSeconde"></div>
+            </article>
+            
+            <article>
+            Total distance driven: <div id="counter"></div>
+            </article>
+            <button onClick="resetStorage();">reset</button>
+            <button onClick="save();">save</button>
+     
+        </section>
+        
+        <footer>
+            <nav>
+                <div><a href="home.html">Home</a></div>
+                <div><a href="upgrades.html" onClick="saveStorage();">Upgrades</a></div>
+                <div><a href="highscores.html" onClick="saveStorage();">Highscores</a></div>
+                <div><a href="achievements.html" onClick="saveStorage();">Achievements</a></div>
+                <div><a href="settings.html" onClick="saveStorage();">Settings</a></div>
+            </nav>
+        </footer>
+    </body>
+</html>
