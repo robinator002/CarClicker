@@ -7,11 +7,6 @@
             <file>file:/C:/Users/Robin/Documents/NetBeansProjects/CarClicker/www/index.html</file>
         </group>
         <group name="DCMWA"/>
-        <group name="MM">
-            <file>file:/C:/Users/Robin/Documents/NetBeansProjects/CarClicker/www/highscores.html</file>
-            <file>file:/C:/Users/Robin/Documents/NetBeansProjects/CarClicker/www/backup.js</file>
-            <file>file:/C:/Users/Robin/Documents/NetBeansProjects/CarClicker/www/index.js</file>
-            <file>file:/C:/Users/Robin/Documents/NetBeansProjects/CarClicker/www/home.html</file>
-        </group>
+        <group name="MM"/>
     </open-files>
 </project-private>

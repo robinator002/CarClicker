@@ -10,8 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/index.css" />  
+        <script src="index.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onLoad="loadUpgrades();">
         <header>
             <p align="center">Upgrades</p>
         </header>
@@ -23,36 +24,37 @@ and open the template in the editor.
                     <th>Cost</th>
             </tr>
             <tr>
-                    <td><img src="images/motor.png" onClick="upgradeFunction1();"/></td>
-                    <td><div id="upgrade_aantal"></div></td>
-                    <td><div id="upgradekost1"></div></td>
+                    <td><img alt="" src="images/motor.png" onClick="upgradeMotor();"/></td>
+                    <td><div id="motor_aantal"></div></td>
+                    <td><div id="motor_kost"></div></td>
             </tr>
             <tr>
-                    <td><img src="images/gearknob.png" onClick="upgradeFunction2();"/></td>
-                    <td><div id="upgrade2"></div></td>
-                    <td><div id="upgradekost2"></div></td>
+                    <td><img src="images/gearknob.png" onClick="upgradeVersnelling();"/></td>
+                    <td><div id="versnelling_aantal"></div></td>
+                    <td><div id="versnelling_kost"></div></td>
             </tr>
             <tr>
-                    <td><img src="images/slak.png" onClick="upgradeFunction3();"/></td>
-                    <td><div id="upgrade3"></div></td>
-                    <td><div id="upgradekost3"></div></td>
+                    <td><img src="images/slak.png" onClick="upgradeTurbo();"/></td>
+                    <td><div id="turbo_aantal"></div></td>
+                    <td><div id="turbo_kost"></div></td>
             </tr>
             <tr>
-                    <td><img src="images/wiel.png" onClick="upgradeFunction4();"/></td>
-                    <td><div id="upgrade4"></div></td>
-                    <td><div id="upgradekost4"></div></td>
+                    <td><img src="images/wiel.png" onClick="upgradeWiel();"/></td>
+                    <td><div id="wiel_aantal"></div></td>
+                    <td><div id="wiel_kost"></div></td>
             </tr>
             <tr>
-                    <td><img src="images/spoiler.png" onClick="upgradeFunction5();"/></td>
-                    <td><div id="upgrade5"></div></td>
-                    <td><div id="upgradekost5"></div></td>
+                    <td><img src="images/spoiler.png" onClick="upgradeSpoiler();"/></td>
+                    <td><div id="spoiler_aantal"></div></td>
+                    <td><div id="spoiler_kost"></div></td>
             </tr>
             <tr>
-                    <td><img src="images/NOS.png" onClick="upgradeFunction6();"/></td>
-                    <td><div id="upgrade6"></div></td>
-                    <td><div id="upgradekost6"></div></td>
+                    <td><img src="images/NOS.png" onClick="upgradeNos();"/></td>
+                    <td><div id="nos_aantal"></div></td>
+                    <td><div id="nos_kost"></div></td>
             </tr>
     </table>
+            <button onClick="start();">start</button>
             
                                                                         
 
@@ -60,11 +62,9 @@ and open the template in the editor.
         </section>
         <footer>
             <nav>
-                <div><a href="home.html">Home</a></div>
+                <div><a href="home.html" onClick="saveStorage();">Home</a></div>
                 <div><a href="upgrades.html">Upgrades</a></div>
                 <div><a href="highscores.html">Highscores</a></div>
-                <div><a href="achievements.html">Achievements</a></div>
-                <div><a href="settings.html">Settings</a></div>
             </nav>
         </footer>
     </body>

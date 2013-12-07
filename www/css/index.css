@@ -6,6 +6,7 @@ html{
     background-size: cover;
     padding: 0px;
     margin: 0px;
+    height: 100%
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     vertical-align: baseline;
     padding: 0px;
     margin: 0px;
+    
 }
 
 a{
@@ -29,9 +31,6 @@ a{
     box-sizing: border-box;	
 }
 
-
-
-@media (max-width: 481px){
     
     section.start{
         margin: 20px;
@@ -80,7 +79,10 @@ a{
         align-items: center;
         justify-content: center;
         display: flex;
-        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
         
     }
     
@@ -135,6 +137,10 @@ a{
     { font: normal 100% arial, sans-serif;
       color: #000000;}
     
+    #highscore tr td.top{
+        background-color: green;
+    }
+    
     #achievements img{
         border-radius: 40px;
         padding: 5px;
@@ -151,7 +157,4 @@ a{
         padding: 10px;
     }
 
-    
-    
-}
 
