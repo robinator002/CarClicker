@@ -88,13 +88,13 @@ a{
     
     nav{
         -webkit-align-items: center;
-        display: flex;
+        float: bottom;
         -webkit-justify-content: center;
         height: auto;
         width: auto;
     }
     
-    nav div a {
+    nav a {
         background-color: grey;
         border-radius: 20%;
         margin: 5px;
