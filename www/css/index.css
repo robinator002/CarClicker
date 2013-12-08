@@ -87,9 +87,7 @@ a{
     }
     
     nav{
-        -webkit-align-items: center;
         float: bottom;
-        -webkit-justify-content: center;
         height: auto;
         width: auto;
     }
