@@ -76,8 +76,8 @@ a{
     footer{
         background-color: rgba(245,61,0,0.7);
         height: 50px;
-        align-items: center;
-        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
         display: flex;
         position: fixed;
         bottom: 0px;
@@ -87,9 +87,9 @@ a{
     }
     
     nav{
-        align-items: center;
+        -webkit-align-items: center;
         display: flex;
-        justify-content: center;
+        -webkit-justify-content: center;
         height: auto;
         width: auto;
     }
@@ -156,5 +156,17 @@ a{
         margin: 5px;
         padding: 10px;
     }
+    
+@media (min-width: 768px){
+    article{
+        background-color: rgba(0,61,245,0.5);
+        width: 520px;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 25px;
+    }
+}
 
 

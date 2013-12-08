@@ -264,27 +264,11 @@ function upgradeNos() {
 
 
 
-
-//resetKnop
-function resetKnop(){
-    
-    counter = 0;
-    document.getElementById("counter").innerHTML = counter;
-    upgrade1 = 0;
-    document.getElementById("upgrade1").innerHTML = upgrade1;
-    document.getElementById("upgradekost1").innerHTML = 0;
-    upgrade2 = 0;
-    document.getElementById("upgrade2").innerHTML = upgrade2;
-    document.getElementById("upgradekost2").innerHTML = 0;
-    document.getElementById("puntenPerSeconde").innerHTML = 0;
-}
-
-
-/*achievement nummer 1
+//achievement nummer 1
 var achievement1Occured = 0;
 var achievement1Timer = setInterval(function () {
         if(achievement1Occured === 0){
-            if(counter > 2000){
+            if(counter > 200){
                 alert("Achievement unlocked: +100 points");
                 counter+=100;
                 document.getElementById("counter").innerHTML = counter;
@@ -295,7 +279,7 @@ var achievement1Timer = setInterval(function () {
         
         }
 }, 100);
-*/
+
 
 
 
